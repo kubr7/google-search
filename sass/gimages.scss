@@ -1,0 +1,76 @@
+@import "mixins";
+@import "colors";
+
+/* googleimage */
+
+.back-to-home {
+  .back-2-home-link {
+    display: inline-block;
+    @include measurement(40px, 40px);
+    vertical-align: middle;
+    border-radius: 2px;
+    box-sizing: border-box;
+    outline: none;
+    padding: 8px;
+    transition: 0.3s;
+  }
+  
+  .back-2-home-link:hover {
+    border-radius: 50%;
+    background-color: $color_2;
+  }
+  
+  a.back-2-home-link {
+    text-decoration: none;
+    color: $color_1;
+  }
+  
+  a.back-2-home-link:hover {
+    text-decoration: underline;
+  }
+  
+  .back-arrow {
+    @include measurement(24px, 24px);
+    vertical-align: middle;
+  }
+}
+
+.image-note {
+  position: absolute;
+  left: 215px;
+  bottom: 0;
+  color: $color_13;
+  font: 16px/16px roboto-regular, arial, sans-serif;
+  white-space: nowrap;
+}
+
+.search-icon-cta {
+  background: transparent;
+  border: none;
+  /* cursor: pointer; */
+  flex: 0 0 auto;
+  padding: 0;
+}
+
+.search-icon-button {
+  background: none;
+  color: $color_13;
+  @include measurement(24px, 24px);
+  margin: auto;
+  padding: 0 4px;
+}
+
+.search-icon-svg {
+  display: inline-block;
+  fill: currentColor;
+  @include measurement(24px, 24px);
+  cursor: pointer;
+  line-height: 24px;
+  position: relative;
+}
+
+.search-icon-svg svg {
+  display: block;
+  @include measurement(100%, 100%);
+  line-height: 24px;
+}

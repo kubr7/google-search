@@ -1,0 +1,185 @@
+@import "mixins";
+@import "colors";
+@import "variables";
+
+/* googleadvancedsearch */
+
+.google-menubar {
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 0 6px;
+}
+
+.logo-img {
+  @include layout;
+  position: relative;
+}
+
+.img {
+  @include measurement(24px, 74px);
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.aab {
+  @include fonts(sans-serif, 16px, 500);
+  // margin-left: 5rem;
+  color: $color_14;
+
+  @include sm {
+    font-size: 32px;
+  }
+}
+
+.aab label {
+  margin-left: 2rem;
+}
+
+.bor {
+  margin-top: 1.5rem;
+  border-bottom: 1px solid $color_15;
+}
+
+.advanced-search-form {
+  padding: 16px;
+}
+
+h2 {
+  color: red;
+}
+
+.ksjs {
+  width: 100%;
+  clear: both;
+}
+
+.jdid {
+  @include layout;
+  flex-wrap: nowrap;
+  // justify-content: flex-start;
+  clear: both;
+  height: 44px;
+}
+
+.ildl {
+  @include layout;
+  justify-content: flex-start;
+  min-width: 160px;
+  @include measurement(44px, auto);
+  @include fonts(sans-serif, 16px, 500);
+  min-height: 42px;
+  color: $color_16;
+}
+
+.hnm {
+  @include layout;
+
+  justify-content: flex-start;
+  min-width: 160px;
+  @include measurement(44px, auto);
+  @include fonts(sans-serif, 16px, 500);
+  min-height: 42px;
+  color: $color_16;
+}
+
+.spc {
+  float: left;
+  min-width: 164px;
+  
+  @include sm {
+    min-width: 376px;
+  }
+}
+
+.ljnc {
+  display: none;
+  width: 424px;
+  min-width: 380px;
+  @include fonts(sans-serif, 13px, 300);
+  color: $color_17;
+
+  @include lg {
+    display: block;
+  }
+}
+
+.spc input[type="text"] {
+  width: auto;
+  text-align: left;
+
+  @include sm {
+    min-width: 370px;
+  }
+}
+
+.fid {
+  // height: 44px;
+  display: table-cell;
+}
+
+.fid span {
+  @include fonts(sans-serif, 13px, 500);
+  color: $color_18;
+}
+
+.fidd {
+  @include fonts(sans-serif, 13px, 700);
+  color: $color_7;
+  line-height: 2;
+  margin-left: 10px;
+}
+
+.fid label {
+  font-size: 12px;
+}
+
+.inptxt {
+  height: 25px;
+  border: 1px solid $color_19;
+  border-radius: 1px;
+  border-top: 1px solid $color_20;
+  outline: 1px solid #0275d8;
+  @include fonts(sans-serif, 13px, 300);
+}
+
+.inptxt:focus {
+  outline: 1px solid $color_21;
+}
+
+.ljNc {
+  display: none;
+  align-items: center;
+  @include measurement(44px, 410px);
+  min-width: 380px;
+  margin: 0 0 0 16px;
+  color: $color_22;
+  @include fonts(sans-serif, 11px, 300);
+  vertical-align: middle;
+  position: relative;
+
+  @include lg {
+    display: flex;
+  }
+}
+
+.btn-advanced-search {
+  display: block;
+  margin: auto;
+  float: right;
+  height: 30px;
+  min-width: 150px;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: $color_23;
+  border: 1px solid $color_23;
+  color: $color_4;
+  user-select: none;
+  line-height: 100%;
+}
+
+.btn-advanced-search:hover {
+  background-color: $color_24;
+  border: 1px solid $color_24;
+}

@@ -1,0 +1,55 @@
+@mixin layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin measurement($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin fonts($family, $size, $weight) {
+  font: {
+    family: $family;
+    size: $size;
+    weight: $weight;
+  }
+}
+
+// Media Queries
+// Extra Small Devices
+@mixin xsm {
+  @media (min-width: #{$screen-xsm-min}) {
+    @content;
+  }
+}
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
